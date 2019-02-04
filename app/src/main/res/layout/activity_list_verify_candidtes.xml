@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_list_of_candidates"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        layout="@layout/custom_actionbar"
+        android:id="@+id/header"/>
+
+
+    <ListView
+        android:layout_above="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+        android:layout_below="@+id/header"/>
+
+
+    <Button
+        android:text="Next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:id="@+id/next"
+        android:textColor="@android:color/white"
+        android:padding="@dimen/spacing_small"
+        android:background="@color/colorPrimary"
+        android:onClick="startTheVotingProcess"/>
+
+</RelativeLayout>

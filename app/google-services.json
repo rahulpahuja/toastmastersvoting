@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "650363869466",
+    "firebase_url": "https://votingapp-d49b1.firebaseio.com",
+    "project_id": "votingapp-d49b1",
+    "storage_bucket": "votingapp-d49b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650363869466:android:2ec192b58b6ab09b",
+        "android_client_info": {
+          "package_name": "myoo.votingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650363869466-bi8meb3nlj84f838bf0qvpuro4oj62s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "myoo.votingapp",
+            "certificate_hash": "b175f1c304aebb96e241e2eaa27f6b409b24bc4b"
+          }
+        },
+        {
+          "client_id": "650363869466-64cse3a3of1lf8hrjtbn470jeaevsgok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "myoo.votingapp",
+            "certificate_hash": "c34c63ab2e50add68ea6529e1ba482f7ba2ba1d7"
+          }
+        },
+        {
+          "client_id": "650363869466-gtqlftbbibc4i3cf32u2ol26fovbnph7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYizQKrkHJAJVRwEpk0CrKtMbmWn2dD2s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650363869466-gtqlftbbibc4i3cf32u2ol26fovbnph7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

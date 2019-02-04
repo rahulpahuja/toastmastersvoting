@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:visibility="gone"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <myoo.votingapp.view.CustomViews.MyTextView_Roboto_Medium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/awsm"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"/>
+
+    <myoo.votingapp.view.CustomViews.MyTextView_Roboto_Medium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/sent"
+        android:textColor="@android:color/black"/>
+
+    <myoo.votingapp.view.CustomViews.MyTextView_Roboto_Medium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/soon"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:gravity="center">
+    <com.hololo.library.otpview.OTPView
+        android:id="@+id/otp_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:hintColor="@android:color/darker_gray"
+        app:inputType="number"
+        app:otpText=""
+        android:clickable="false"
+        android:saveEnabled="false"
+        app:viewsPadding="30"
+        app:count="6"
+        app:textColor="@android:color/black"
+        app:otpHint="*"
+        app:textSize="8"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="22dp">
+
+    <myoo.votingapp.view.CustomViews.MyTextView_Roboto_Medium
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/verify"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <myoo.votingapp.view.CustomViews.MyTextView_Roboto_Medium
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:gravity="start"
+        android:text="@string/resend"
+        android:textStyle="bold"
+        android:textColor="@color/resend" />
+    </LinearLayout>
+
+</LinearLayout>

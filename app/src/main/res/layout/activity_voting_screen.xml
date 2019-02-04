@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_voting_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="myoo.votingapp.view.Activity.VotingActivity">
+
+    <TextView
+        android:text="Voting item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:id="@+id/heading_voting_screen"
+        android:textColor="@color/blue_grey_700"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_normal"/>
+    <Button
+        android:text="Next"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button2"
+        android:padding="@dimen/spacing_medium"
+        android:textColor="@android:color/white"
+        android:onClick="Next"/>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading_voting_screen"
+        android:id="@+id/voting_screen_list"
+        android:layout_above="@+id/button2"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

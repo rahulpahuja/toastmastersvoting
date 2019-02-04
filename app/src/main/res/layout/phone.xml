@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp" />
+
+    <myoo.votingapp.view.CustomViews.MyTextView_Roboto_Medium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/need"
+        android:textColor="@android:color/black" />
+
+    <myoo.votingapp.view.CustomViews.MyTextView_Roboto_Medium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/code"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingEnd="70dp"
+        android:paddingStart="79dp">
+
+        <myoo.votingapp.view.CustomViews.MyTextView_Roboto_Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="8dp">
+
+        <myoo.votingapp.view.CustomViews.MyTextView_Roboto_Medium
+            android:id="@+id/myTextView_Roboto_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ind"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@+id/phone_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <myoo.votingapp.view.CustomViews.EditText_Roboto_Regular
+            android:id="@+id/phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/myTextView_Roboto_Medium2"
+            app:layout_constraintStart_toEndOf="@+id/myTextView_Roboto_Medium"
+            app:layout_constraintTop_toTopOf="@+id/myTextView_Roboto_Medium" />
+
+        <myoo.votingapp.view.CustomViews.MyTextView_Roboto_Medium
+            android:id="@+id/myTextView_Roboto_Medium2"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:text="@string/why"
+            android:visibility="gone"
+            android:textColor="@color/resend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/phone_number"
+            app:layout_constraintTop_toTopOf="@+id/phone_number" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@android:color/darker_gray" />
+
+
+</LinearLayout>

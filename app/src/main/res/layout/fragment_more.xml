@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/custom_actionbar"
+        android:id="@+id/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/spacing_tiny"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_settings"
+                android:padding="@dimen/spacing_normal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image1"
+                android:layout_centerVertical="true"
+                android:text="Setting"
+                android:textColor="@color/blue_grey_700"
+                android:layout_marginLeft="@dimen/spacing_tiny_normal"
+                android:textSize="@dimen/font_normal"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/blue_grey_700"/>
+
+        <RelativeLayout
+            android:id="@+id/RRShare"
+            android:layout_width="match_parent"
+            android:padding="@dimen/spacing_tiny"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_share"
+                android:padding="@dimen/spacing_normal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image2"
+                android:layout_centerVertical="true"
+                android:text="Share App"
+                android:textColor="@color/blue_grey_700"
+                android:layout_marginLeft="@dimen/spacing_tiny_normal"
+                android:textSize="@dimen/font_normal"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/blue_grey_700"/>
+
+        <RelativeLayout
+            android:id="@+id/RRRate"
+            android:layout_width="match_parent"
+            android:padding="@dimen/spacing_tiny"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_rate"
+                android:padding="@dimen/spacing_normal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image3"
+                android:layout_centerVertical="true"
+                android:text="Rate Us"
+                android:textColor="@color/blue_grey_700"
+                android:layout_marginLeft="@dimen/spacing_tiny_normal"
+                android:textSize="@dimen/font_normal"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/blue_grey_700"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/spacing_tiny"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_about_us"
+                android:padding="@dimen/spacing_normal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image4"
+                android:layout_centerVertical="true"
+                android:text="About Us"
+                android:textColor="@color/blue_grey_700"
+                android:layout_marginLeft="@dimen/spacing_tiny_normal"
+                android:textSize="@dimen/font_normal"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/blue_grey_700"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

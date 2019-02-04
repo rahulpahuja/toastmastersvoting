@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_prepare_all_the_voting_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myoo.votingapp.view.Activity.PrepareAllVotingItemsScreen">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/custom_actionbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rr"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rr"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rrTop"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/image_give_vote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/spacing_tiny_normal"
+                android:tint="@android:color/white"
+                android:drawableTop="@drawable/ic_vote"
+                android:text="Give Vote"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:drawablePadding="4dp"
+                android:background="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/RRbelow"
+            android:visibility="visible"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/start_voting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:onClick="enterVotingProcessWithSelectedItems"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_tiny">
+
+                <ImageView
+                    android:id="@+id/image_vote"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/spacing_tiny_normal"
+                    android:tint="@android:color/white"
+                    app:srcCompat="@drawable/ic_vote" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_vote"
+                    android:layout_marginTop="@dimen/spacing_tiny"
+                    android:gravity="center"
+                    android:text="START THE VOTING"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/view_all_results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:onClick="goToReults"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_tiny">
+
+                <ImageView
+                    android:id="@+id/image_result"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/spacing_tiny_normal"
+                    app:srcCompat="@drawable/ic_result"
+                    android:tint="@android:color/white"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_result"
+                    android:layout_marginTop="@dimen/spacing_tiny"
+                    android:gravity="center"
+                    android:text="VIEW RESULTS"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="myoo.votingapp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <application
+        android:name=".Utils.App"
+        android:allowBackup="true"
+        android:icon="@drawable/votingline"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".view.Activity.AddNewMeetingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.PrepareAllVotingItemsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.ListOfCandidates"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.AddCandidateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.MonitoredActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.VotingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.ResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.QualificationCheck"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.Activity.EnterCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.ForgetCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.CheckValidationCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.Activity.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity android:name=".view.Activity.VotingStatusAdmin" />
+        <activity android:name=".view.Activity.JoinToVote" />
+    </application>
+
+</manifest>

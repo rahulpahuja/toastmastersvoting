@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_tiny_normal"
+    android:background="@drawable/back_grid">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_meeting_list"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thumbnail"
+        android:layout_marginBottom="@dimen/spacing_tiny_normal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_normal"
+             />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

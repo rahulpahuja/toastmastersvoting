@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/completerow"
+    android:background="@drawable/back_grid"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:weightSum="5">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_user"
+        android:layout_margin="10dp"
+        android:id="@+id/photo" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_weight="5"
+        android:layout_marginRight="10dp"
+        android:weightSum="3"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/blue_grey_700"
+            android:layout_margin="@dimen/spacing_tiny"
+            android:id="@+id/name_of_cadidate" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/spacing_tiny"
+            android:id="@+id/project_of_cadidate"
+            android:layout_below="@+id/name_of_cadidate"
+            />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/title_of_cadidate"
+            android:textStyle="bold"
+            android:layout_below="@+id/project_of_cadidate"
+            android:layout_margin="@dimen/spacing_tiny"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

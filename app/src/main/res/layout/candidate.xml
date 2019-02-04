@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/completerow"
+    android:padding="@dimen/spacing_tiny"
+    android:weightSum="5">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:padding="@dimen/spacing_small"
+        app:srcCompat="@drawable/ic_user"
+        android:layout_centerVertical="true"
+        android:id="@+id/photo" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="5"
+        android:layout_marginRight="10dp"
+        android:weightSum="3"
+        android:id="@+id/LLdata"
+        android:layout_toRightOf="@+id/photo"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/blue_grey_700"
+            android:layout_margin="@dimen/spacing_tiny_normal"
+            android:layout_toLeftOf="@+id/deletebutton"
+            android:id="@+id/name_of_cadidate" />
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/spacing_tiny_normal"
+            android:id="@+id/project_of_cadidate"
+            android:textColor="@color/blue_grey_700"
+            android:layout_below="@+id/name_of_cadidate"
+            />
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/title_of_cadidate"
+            android:layout_below="@+id/project_of_cadidate"
+            android:textColor="@color/blue_grey_700"
+            android:layout_margin="@dimen/spacing_tiny_normal"/>
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/deletebutton"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_weight="5"
+            android:padding="@dimen/spacing_tiny"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

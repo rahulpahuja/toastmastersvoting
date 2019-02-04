@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_result_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Activity.ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="@color/colorAccent"
+            >
+
+            <TextView
+                android:id="@+id/heading_voting_results"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:text="Voting Results"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentRight="true"
+                android:onClick="shareIt"
+                android:tint="@android:color/white"
+                android:padding="@dimen/spacing_small"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_share" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Best Prepared Speaker"
+            android:textAlignment="center" />
+
+        <!-- "Loaded" flash bar layout
+        <include
+            android:id="@+id/best_prep_speaker"
+            layout="@layout/winner_candidate" />
+        -->
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- The main content -->
+            <include
+                android:id="@+id/best_prep_speaker"
+                layout="@layout/winner_candidate" />
+            <include
+                android:id="@+id/best_prep_speakerTie"
+                layout="@layout/layout_its_a_tie"
+                android:visibility="invisible"
+
+                />
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Best Table topic Speaker"
+            android:textAlignment="center" />
+
+
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- The main content -->
+
+            <include
+                android:id="@+id/best_table_topic"
+                layout="@layout/winner_candidate" />
+            <include
+                android:id="@+id/TieForTT"
+                layout="@layout/layout_its_a_tie"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Best Role taker "
+            android:textAlignment="center" />
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- The main content -->
+            <include
+                android:id="@+id/best_role_taker"
+                layout="@layout/winner_candidate" />
+            <include
+                android:id="@+id/best_role_taker_Tie"
+                layout="@layout/layout_its_a_tie"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Best evaluator"
+            android:textAlignment="center" />
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- The main content -->
+            <include
+                android:id="@+id/best_evaluator"
+                layout="@layout/winner_candidate" />
+            <include
+                android:id="@+id/best_evaluator_Tie"
+                layout="@layout/layout_its_a_tie"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

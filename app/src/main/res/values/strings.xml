@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">Toastmaster Voting</string>
+
+    <string-array name="projectCategory_list">
+
+        <item>CC Manual</item>
+        <item>Advanced Manual</item>
+        <item>Pathways</item>
+    </string-array>
+
+
+    <string-array name="project_list">
+        <item>CC1</item>
+        <item>CC2</item>
+        <item>CC3</item>
+        <item>CC4</item>
+        <item>CC5</item>
+        <item>CC6</item>
+        <item>CC7</item>
+        <item>CC8</item>
+        <item>CC9</item>
+        <item>CC10</item>
+        <item>ACB1</item>
+        <item>ACB2</item>
+        <item>ACB3</item>
+        <item>ACB4</item>
+        <item>ACB5</item>
+        <item>ACS1</item>
+        <item>ACS2</item>
+        <item>ACS3</item>
+        <item>ACS4</item>
+        <item>ACS5</item>
+        <item>ACG1</item>
+        <item>ACG2</item>
+        <item>ACG3</item>
+        <item>ACG4</item>
+        <item>ACG5</item>
+
+    </string-array>
+
+    <string-array name="CCproject_list">
+        <item>CC1</item>
+        <item>CC2</item>
+        <item>CC3</item>
+        <item>CC4</item>
+        <item>CC5</item>
+        <item>CC6</item>
+        <item>CC7</item>
+        <item>CC8</item>
+        <item>CC9</item>
+        <item>CC10</item>
+    </string-array>
+    >
+
+    <string-array name="advcancedProjectList">
+        <item>ACB1</item>
+        <item>ACB2</item>
+        <item>ACB3</item>
+        <item>ACB4</item>
+        <item>ACB5</item>
+        <item>ACS1</item>
+        <item>ACS2</item>
+        <item>ACS3</item>
+        <item>ACS4</item>
+        <item>ACS5</item>
+        <item>ACG1</item>
+        <item>ACG2</item>
+        <item>ACG3</item>
+        <item>ACG4</item>
+        <item>ACG5</item>
+    </string-array>
+    >
+
+    <string-array name="pathwaysProjectList">
+        <item>1.1</item>
+        <item>1.2</item>
+        <item>1.3</item>
+        <item>1.4</item>
+        <item>1.5</item>
+        <item>2.1</item>
+        <item>2.2</item>
+        <item>2.3</item>
+        <item>2.4</item>
+        <item>2.5</item>
+
+    </string-array>
+    >
+
+    <string-array name="role_list">
+        <item>SAA</item>
+        <item>MOC</item>
+        <item>GE</item>
+        <item>Timer</item>
+        <item>Ah counter</item>
+        <item>Grammarian</item>
+        <item>TTM</item>
+    </string-array>
+
+    <string-array name="tag_role_list">
+        <item>Timer</item>
+        <item>Ah counter</item>
+        <item>Grammarian</item>
+    </string-array>
+    <string name="members">members</string>
+    <string name="guests">guests</string>
+
+    <string name="prepared_speaker">Prepared Speakers</string>
+    <string name="table_topics">Table Topics</string>
+    <string name="evaluators">Evaluators</string>
+    <string name="role_takers">Role Takers</string>
+    <string name="tag_team">TagTeam</string>
+
+    <string name="thank_you">Thank You</string>
+    <string name="please_vote">Please vote</string>
+
+
+    <string-array name="voting_item_list">
+        <item>@string/prepared_speaker</item>
+        <item>@string/role_takers</item>
+        <item>@string/table_topics</item>
+        <item>@string/evaluators</item>
+
+    </string-array>
+
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="validation_error_title">Invalid Input</string>
+    <string name="required_field_error_msg">%s is a required field</string>
+
+
+    <string name="one">1</string>
+
+    <string name="two">2</string>
+
+    <string name="three">3</string>
+
+    <string name="four">4</string>
+
+    <string name="five">5</string>
+
+    <string name="six">6</string>
+
+    <string name="seven">7</string>
+
+    <string name="eight">8</string>
+
+    <string name="nine">9</string>
+
+    <string name="zero">0</string>
+
+    <string name="abc">ABC</string>
+
+    <string name="def">DEF</string>
+
+    <string name="ghi">GHI</string>
+
+    <string name="jkl">JKL</string>
+
+    <string name="mno">MNO</string>
+
+    <string name="pqrs">PQRS</string>
+
+    <string name="tuv">TUV</string>
+
+    <string name="wxyz">WXYZ</string>
+
+    <string name="need">We need to text you a</string>
+
+    <string name="code">confirmation code to get started.</string>
+
+    <string name="awsm">Awesome, Thanks!</string>
+
+    <string name="sent">We have sent a confirmation code.</string>
+
+    <string name="soon">You should get it soon.</string>
+
+    <string name="why">why?</string>
+
+    <string name="phone">PHONE NUMBER</string>
+
+    <string name="verify">VERIFY</string>
+
+    <string name="resend">RESEND</string>
+
+    <string name="ind">+91</string>
+
+</resources>

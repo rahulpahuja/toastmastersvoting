@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/completerow"
+    android:weightSum="5">
+
+
+
+    <RelativeLayout
+        android:id="@+id/RRData"
+        android:layout_width="match_parent"
+        android:padding="@dimen/spacing_tiny"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:padding="@dimen/spacing_small"
+            android:src="@drawable/ic_user"
+            android:layout_centerVertical="true"
+            android:id="@+id/photo" />
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:layout_marginRight="10dp"
+            android:weightSum="3"
+            android:id="@+id/LLdata"
+            android:layout_toRightOf="@+id/photo"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/blue_grey_700"
+                android:layout_margin="@dimen/spacing_tiny_normal"
+                android:layout_toLeftOf="@+id/deletebutton"
+                android:id="@+id/name_of_cadidate" />
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/spacing_tiny_normal"
+                android:id="@+id/project_of_cadidate"
+                android:textColor="@color/blue_grey_700"
+                android:layout_below="@+id/name_of_cadidate"
+                />
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/title_of_cadidate"
+                android:layout_below="@+id/project_of_cadidate"
+                android:textColor="@color/blue_grey_700"
+                android:layout_margin="@dimen/spacing_tiny_normal"/>
+
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"
+                android:layout_weight="5"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RRRow"
+        android:visibility="gone"
+        android:background="@color/overwrite"
+        android:layout_alignTop="@+id/RRData"
+        android:layout_alignBottom="@+id/RRData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:paddingLeft="@dimen/spacing_huge"
+            android:paddingRight="@dimen/spacing_huge"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_cancel"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
